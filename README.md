@@ -8,9 +8,9 @@ Setup
 
 Clone the project from here, or fork it and clone that.
 
-  $ gem install bundler
-  $ bundle install
-  $ rake spec
+	$ gem install bundler
+	$ bundle install
+	$ rake spec
 
 Copyright
 ---------
