@@ -4,7 +4,7 @@ require 'rspec'
 require 'example'
 
 RSpec.configure do |config|
-  config.before(:all) do
+  config.before(:each) do
     require 'stringio'
 
     @log = StringIO.new
