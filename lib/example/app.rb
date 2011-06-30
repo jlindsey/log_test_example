@@ -1,11 +1,11 @@
 module Example
   class App
-    attr :config
+    attr_accessor :config
 
     def initialize opts = {}
       self.config = {
         name:   "Foobar",
-        type:   :widget,
+        type:   :gadget,
         serial: "abc123"
       }.merge opts
 
