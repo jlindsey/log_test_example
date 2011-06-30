@@ -32,6 +32,13 @@ describe Example::App do
     log.should include("Run completed")
   end
 
+  it "should log to debug on the cleanup step" do
+    Example.logger.level = Logger::DEBUG
+
+    @app.run
+    log.should include("Cleaning up...")
+  end
+
   it "should log an error if ran on a :widget" do
     Example.logger.level = Logger::ERROR
 
