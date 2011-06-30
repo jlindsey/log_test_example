@@ -36,7 +36,7 @@ describe Example::App do
     Example.logger.level = Logger::ERROR
 
     @app.config[:type] = :widget
-    @app.perform_action
+    @app.run
     
     log.should include("Widgets can't perform this action!")
   end
